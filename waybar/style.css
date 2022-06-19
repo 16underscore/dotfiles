@@ -1,0 +1,135 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	min-height: 0;
+}
+
+window#waybar {
+	background-color: black;
+	color: white;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#workspaces button:hover {
+	background: black;
+}
+
+#workspaces button.focused {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#workspaces button.urgent {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#mode {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#clock,
+#battery,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#idle_inhibitor {
+	padding: 0 9px;
+	margin: 0 3px;
+	color: #313131;
+}
+
+#window,
+#workspaces {
+	margin: 0 3px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+	margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+	margin-right: 0;
+}
+
+#clock {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#battery {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#battery.charging {
+	background-color: #313131;
+	color: #313131;
+}
+
+label:focus {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#backlight {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#network {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#network.disconnected {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#pulseaudio {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#pulseaudio.muted {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#tray {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#idle_inhibitor {
+	background-color: #313131;
+	color: #cccccc;
+}
+
+#idle_inhibitor.activated {
+	background-color: #cccccc;
+	color: #313131;
+}
+
+#language {
+	background: #313131;
+	color: #cccccc;
+	padding: 0 5px;
+	margin: 0 5px;
+	min-width: 16px;
+}

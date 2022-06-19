@@ -1,0 +1,169 @@
+* {
+crimson: rgb ( 220, 20, 60 );
+	purple: rgb ( 128, 0, 128 );
+	indigo: rgb ( 75, 0, 130 );
+	white: rgb ( 255, 255, 255 );
+	foreground: rgb ( 75, 0, 130 );
+	custom: rgb ( 31, 15, 47);
+	selected-active-foreground: var(black);
+	separatorcolor: var(foreground);
+	urgent-foreground: var(crimson);
+	alternate-urgent-background: var(black);
+	background-color: black;
+	border-color: var(foreground);
+	normal-background: var(black);
+	selected-urgent-background: var(crimson);
+	alternate-active-background: var(black);
+	spacing: 2;
+	alternate-normal-foreground: var(foreground);
+	urgent-background: var(black);
+	selected-normal-foreground: var(black);
+	active-foreground: var(white);
+	selected-active-background: var(purple);
+	active-background: var(black);
+	selected-normal-background: var(indigo);
+	alternate-normal-background: var(black);
+	selected-urgent-foreground: var(black);
+	normal-foreground: var(foreground);
+	alternate-urgent-foreground: var(crimson);
+	alternate-active-foreground: var(white);
+}
+element {
+	padding: 1px ;
+	cursor: pointer;
+	spacing: 5px ;
+	border: 0;
+}
+element normal.normal {
+	background-color: var(normal-background);
+	text-color: var(normal-foreground);
+}
+element normal.urgent {
+	background-color: var(urgent-background);
+	text-color: var(urgent-foreground);
+}
+element normal.active {
+	background-color: var(active-background);
+	text-color: var(active-foreground);
+}
+element selected.normal {
+	background-color: var(selected-normal-background);
+	text-color: var(selected-normal-foreground);
+}
+element selected.urgent {
+	background-color: var(selected-urgent-background);
+	text-color: var(selected-urgent-foreground);
+}
+element selected.active {
+	background-color: var(selected-active-background);
+	text-color: var(selected-active-foreground);
+}
+element alternate.normal {
+	background-color: var(alternate-normal-background);
+	text-color: var(alternate-normal-foreground);
+}
+element alternate.urgent {
+	background-color: var(alternate-urgent-background);
+	text-color: var(alternate-urgent-foreground);
+}
+element alternate.active {
+	background-color: var(alternate-active-background);
+	text-color: var(alternate-active-foreground);
+}
+element-text {
+	background-color: transparent;
+	cursor: inherit;
+	highlight: inherit;
+	text-color: inherit;
+}
+element-icon {
+	background-color: transparent;
+	size: 1.0000em ;
+	cursor: inherit;
+	text-color: inherit;
+}
+window {
+	padding: 5;
+	background-color: var(black);
+	border: 1;
+}
+mainbox {
+	padding: 0;
+	border: 0;
+}
+message {
+	padding: 1px ;
+	border-color: var(separatorcolor);
+	border: 2px dash 0px 0px ;
+}
+textbox {
+	text-color: var(foreground);
+}
+listview {
+	padding: 2px 0px 0px ;
+	scrollbar: true;
+	border-color: var(separatorcolor);
+	spacing: 2px ;
+	fixed-height: 0;
+	border: 2px dash 0px 0px ;
+}
+scrollbar {
+	width: 4px ;
+	padding: 0;
+	handle-width: 8px ;
+	border: 0;
+	handle-color: var(normal-foreground);
+}
+sidebar {
+	border-color: var(separatorcolor);
+	border: 2px dash 0px 0px ;
+}
+button {
+	cursor: pointer;
+	spacing: 0;
+	text-color: var(normal-foreground);
+}
+button selected {
+	background-color: var(selected-normal-background);
+	text-color: var(selected-normal-foreground);
+}
+num-filtecrimson-rows {
+	expand: false;
+	text-color: var(custom);
+}
+num-rows {
+	expand: false;
+	text-color: var(custom);
+}
+textbox-num-sep {
+	expand: false;
+	str: "/";
+	text-color: var(custom);
+}
+inputbar {
+	padding: 1px ;
+	spacing: 0px ;
+	text-color: var(normal-foreground);
+	children: [ "prompt","textbox-prompt-colon","entry","num-filtecrimson-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+case-indicator {
+	spacing: 0;
+	text-color: var(normal-foreground);
+}
+entry {
+	text-color: var(normal-foreground);
+	cursor: text;
+	spacing: 0;
+	placeholder-color: var(custom);
+	placeholder: "Type to filter";
+}
+prompt {
+	spacing: 0;
+	text-color: var(normal-foreground);
+}
+textbox-prompt-colon {
+	margin: 0px 0.3000em 0.0000em 0.0000em ;
+	expand: false;
+	str: ":";
+	text-color: inherit;
+}
