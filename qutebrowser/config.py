@@ -39,11 +39,14 @@ c.tabs.tooltips = False
 c.url.default_page = 'about:blank'
 c.url.searchengines = {
 	'DEFAULT': 'https://duckduckgo.com/?q={}',
+	'ac': 'https://adventofcode.com/{}',
 	'al': 'https://archlinux.org/packages/?q={}',
+	'cr': 'https://crates.io/search?q={}',
 	'dc': 'https://www.dict.cc/?s={}',
+	'iv': 'https://invidious.lunar.icu/search?q={}'
 	'mw': 'https://minecraft.fandom.com/wiki/{}',
+	'os': 'https://odysee.com/$/search?q={}',
 	'rd': 'https://reddit.com/r/{}',
-	'yt': 'https://youtube.com/results?search_query={}',
 	'lh': 'localhost:{}'
 }
 
