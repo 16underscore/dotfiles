@@ -13,6 +13,7 @@
 	"editor.emptySelectionClipboard": false,
 	"editor.folding": false,
 	"editor.foldingHighlight": false,
+	"editor.fontSize": 16,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "all",
