@@ -8,6 +8,7 @@
 	"editor.autoSurround": "never",
 	"editor.comments.insertSpace": false,
 	"editor.cursorBlinking": "solid",
+	"editor.cursorSmoothCaretAnimation": true,
 	"editor.detectIndentation": false,
 	"editor.dragAndDrop": false,
 	"editor.emptySelectionClipboard": false,
